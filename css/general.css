@@ -65,12 +65,22 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
+}
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid--center-v {
   align-items: center;
@@ -153,6 +163,23 @@ body {
 .link:active {
   color: #cf711f;
   border-bottom: 0.1rem solid transparent;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
 /* HELPER/SETTING CLASSES */
 .margin-right-sm {
