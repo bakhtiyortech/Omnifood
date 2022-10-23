@@ -45,12 +45,14 @@ Default: 9px
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /************************/
 /* GENERAL REUSABLE COMPONENTS */
@@ -82,9 +84,9 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-.grid--5-cols {
+/* .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 .grid--center-v {
   align-items: center;
 }
@@ -191,6 +193,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 .list-icon {
   width: 3rem;

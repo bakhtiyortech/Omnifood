@@ -8,6 +8,7 @@
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -20,7 +21,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -45,6 +46,22 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /************************/
@@ -77,7 +94,7 @@
   gap: 1.6rem;
   margin-top: 8rem;
 }
-.delivered-img {
+.delivered-imgs {
   display: flex;
 }
 .delivered-imgs img {
@@ -328,7 +345,6 @@
 }
 .pricing-plan {
   border-radius: 1.1rem;
-
   width: 75%;
 }
 .plan-header {
@@ -528,7 +544,7 @@
   line-height: 1.6;
 }
 .address {
-  margin-bottom: 3.6rem;
+  margin-bottom: 2.4rem;
 }
 .footer-nav {
   list-style: none;
